@@ -40,7 +40,7 @@ pip3 install -r requirements.txt
 
 Then, download the LLM model and place it in a directory of your choice:
 
-- LLM: The default model is `ggml-gpt4all-j-v1.3-groovy.bin`. If you have a preference for a different GPT4All-J compatible model, simply download it and reference it in your .env file.
+- LLM: The default model is `ggml-gpt4all-j-v1.3-groovy.bin`. If you have a preference for a different GPT4All-J compatible model, simply download it and reference it in your main file.
 
 ## 📜 License
 
