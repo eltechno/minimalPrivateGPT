@@ -44,9 +44,15 @@ db = Chroma.from_documents(
 )
 
 db.persist()
-db = None
+db = None #clear variable to free memory
 
-# The above code loads PDF documents from a source directory using the PDFMinerLoader class. It then splits the text in the documents into chunks using RecursiveCharacterTextSplitter. Next, it creates embeddings for each chunk of text using a pre-trained Hugging Face model specified by `embeddings_model_name`. Finally, it creates a Chroma vector store from the texts and embeddings using `Chroma.from_documents()`, which returns an instance of `Chroma` that can be used to perform similarity search operations on the vectors. The resulting vector store is stored locally in `persist_directory`.
+# The above code loads PDF documents from a source directory using the PDFMinerLoader class. 
+#It then splits the text in the documents into chunks using RecursiveCharacterTextSplitter. 
+#Next, it creates embeddings for each chunk of text using a pre-trained Hugging Face model 
+#specified by `embeddings_model_name`. Finally, it creates a Chroma vector store from the 
+#texts and embeddings using `Chroma.from_documents()`, which returns an instance of 
+#`Chroma` that can be used to perform similarity search operations on the vectors. 
+#The resulting vector store is stored locally in `persist_directory`.
 
 
 # ====================================================
