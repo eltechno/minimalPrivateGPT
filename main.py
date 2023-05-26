@@ -18,6 +18,8 @@ CHROMA_SETTINGS = Settings(
     chroma_db_impl="duckdb+parquet", persist_directory="db", anonymized_telemetry=False
 )
 
+#this is the ingestion 
+
 loader = PDFMinerLoader(source_directory)
 documents = loader.load()
 
@@ -56,6 +58,11 @@ db = None #clear variable to free memory
 
 
 # ====================================================
+# The following code initializes a Chroma vector store using HuggingFaceEmbeddings as the embedding function.
+# It uses a pre-trained model located at "models/ggml-gpt4all-j.bin" to generate embeddings.
+# The resulting Chroma vector store is saved in the "db" directory and uses client settings defined in CHROMA_SETTINGS. 
+
+#this is the QA
 
 # model_path = "models/ggml-gpt4all-j-v1.3-groovy.bin"
 model_path = "models/ggml-gpt4all-j.bin"
