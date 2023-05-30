@@ -17,6 +17,11 @@ Then, navigate into the cloned repository:
 ```bash
 cd minimalPrivateGPT
 ```
+For Linux
+
+apt-get install build-essential -y
+
+
 
 ## 🚀 Usage
 
