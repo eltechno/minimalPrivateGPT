@@ -18,7 +18,7 @@ CHROMA_SETTINGS = Settings(
     chroma_db_impl="duckdb+parquet", persist_directory="db", anonymized_telemetry=False
 )
 
-#this is the ingestion 
+#this is the ingestion files
 
 loader = PDFMinerLoader(source_directory)
 documents = loader.load()
